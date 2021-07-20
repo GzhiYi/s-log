@@ -117,7 +117,7 @@ title:
 description: 
 keywords: 
 labels: []
-date: ${dayjs(new Date()).format('YYYY-MM-DD')}
+date: ${dayjs(new Date()).format('YYYY-MM-DD HH:mm:ss')}
 ---`
       fs.writeFile(path, outPutContent, err => {
         if (err) return console.log('填充文本失败', err)
