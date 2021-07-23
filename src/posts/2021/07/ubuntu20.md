@@ -70,3 +70,10 @@ npm install -g n
 
 需要安装yarn，参考这个
 [2021_07_yarn-global-install-not-working](https://gzhiyi.top/blog/2021_07_yarn-global-install-not-working)
+
+## oh my zsh
+
+```bash
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
