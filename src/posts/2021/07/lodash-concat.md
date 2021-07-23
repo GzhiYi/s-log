@@ -1,5 +1,5 @@
 ---
-title: lodash数组中chunk、compact方法
+title: lodash数组中concat方法
 description: lodash concat, array method
 keywords: lodash,concat,array,arrayPush,copyArray,baseFlatten
 labels: [lodash]
