@@ -9,6 +9,6 @@
 </main>
 <style>
 main {
-	background-color: #B9C4AF;
+	background-color: #DEE2E8;
 }
 </style>
