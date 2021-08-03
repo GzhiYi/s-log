@@ -5,11 +5,11 @@
 </svelte:head>
 
 <div class="base">
+	<div class="title">{post.title}</div>
+	<span class="author">GzhiYi · {post.date}</span>
 	{#each post.labels as label}
 		<div class="label">{label}</div>
 	{/each}
-	<div class="title">{post.title}</div>
-	<span class="author">GzhiYi · {post.date}</span>
 </div>
 <div class="content">{@html post.html}</div>
 
@@ -66,13 +66,14 @@
 
 <style>
 .base {
-	padding: 60px 0 60px 200px;
-	background-color: #C3CEB9;
+	background-color: #DEE2E8;
+	text-align: center;
+	margin-bottom: 20px;
 }
 .title {
 	font-size: 48px;
 	font-weight: 500;
-	margin-bottom: 16px;
+	padding: 80px 0 20px;
 }
 .author {
 	font-size: 18px;
@@ -81,11 +82,13 @@
 .content {
 	overflow: hidden;
 	color: #3C3C3C;
-	padding: 36px 36px 236px 200px;
+	margin: 0 auto;
 	max-width: 1000px;
 }
 .contact {
-	padding: 36px 36px 236px 200px;
+	text-align: center;
+	padding: 100px;
+	line-height: 40px;
 }
 
 :global(pre) {
@@ -98,7 +101,7 @@
 	margin: 0 4px;
 }
 :global(blockquote) {
-	background: #d7e0cf;
+	background: #DEE2E8;
 	padding: 10px;
 	margin: 0 0 0 20px;
 	border-radius: 16px;
