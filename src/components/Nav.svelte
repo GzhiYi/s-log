@@ -4,9 +4,12 @@
 
 <style>
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
+		position: fixed;
+    top: 0;
+    background-color: #ffffffbd;
+    width: 100%;
 	}
 
 	ul {
@@ -50,9 +53,6 @@
 
 <nav>
 	<ul>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">文章列表</a></li>
 	</ul>
 </nav>

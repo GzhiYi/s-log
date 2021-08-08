@@ -34,7 +34,6 @@
 	<meta name="keywords" content={site.keywords}>
 </svelte:head>
 
-
 <ul>
 	{#each posts as post}
 		<!-- we're using the non-standard `rel=prefetch` attribute to

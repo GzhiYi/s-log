@@ -14,7 +14,7 @@
 <div class="content">{@html post.html}</div>
 
 <div class="contact">
-	<div>如果你对这页内容有疑问，欢迎联系我！</div>
+	<div style="line-height: 20px;">如果你对这页内容有疑问，欢迎联系我！</div>
 	<a target="_blank" href="mailto:zhiyi.gong@outlook.com?subject=【重要】{post.title}&body=gzhiyi.top/blog/{post.slug}">
 		邮箱
 	</a>
@@ -74,6 +74,7 @@
 	font-size: 48px;
 	font-weight: 500;
 	padding: 80px 0 20px;
+	line-height: 48px;
 }
 .author {
 	font-size: 18px;
@@ -95,6 +96,7 @@
 	padding: 20px;
 	border-radius: 8px;
 	background-color: #f8fdf3;
+	overflow-x: scroll;
 }
 :global(code) {
 	background-color: #f8fdf3;
