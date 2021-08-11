@@ -1,5 +1,5 @@
 ---
-title: 鼠标微动更换
+title: g102鼠标微动更换
 description: g102鼠标双击了，然后听说可以自己更换微动，所以就动手换了。
 keywords: g102,mouse,switch,double click
 labels: [动手]
