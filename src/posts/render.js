@@ -32,7 +32,7 @@ renderer.image = function (
   } else {
     renderSize = ''
   }
-  return `<div style="text-align: center;"><img align="center" style="width: -webkit-fill-available;margin-bottom: 20px;border-radius: 8px;background: #f8fdf3;" data-zoomable src="${href}" alt="${text}" ${renderSize}></div>`
+  return `<div style="text-align: center;"><img align="center" style="margin-bottom: 20px;border-radius: 8px;background: #f8fdf3;" data-zoomable src="${href}" alt="${text}" ${renderSize}></div>`
 }
 renderer.link = function (
   href,
