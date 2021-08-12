@@ -25,6 +25,23 @@
 	ul {
 		margin: 0 0 1em 0;
 		line-height: 1.5;
+		list-style-type: none;
+	}
+	.post-list {
+		margin: 0 auto;
+	}
+	li {
+		padding: 8px 0;
+		line-height: 23px;
+	}
+	li > a {
+		font-size: 20px;
+	}
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
 	}
 </style>
 
@@ -33,8 +50,7 @@
 	<meta name="description" content={site.description}>
 	<meta name="keywords" content={site.keywords}>
 </svelte:head>
-
-<ul>
+<ul class="post-list">
 	{#each posts as post}
 		<!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
