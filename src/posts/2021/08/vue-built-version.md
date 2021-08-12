@@ -1,8 +1,8 @@
 ---
 title: Vue构建出来的版本
 description: vue通过rollup构建工具构建出来的版本有哪些，都有什么差别
-keywords: vue
-labels: [vue源码，构建，esmodule版，commonjs版，全版本，运行时，runtime，compiler，编译器版本]
+keywords: vue源码，构建，esmodule版，commonjs版，全版本，运行时，runtime，compiler，编译器版本
+labels: [vue]
 date: 2021-08-12 15:43:53
 ---
 
