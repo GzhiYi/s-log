@@ -31,6 +31,7 @@ _.difference([3, 2, 1], [4, 2])
 ```javascript
 function difference(array, ...values) {
   return isArrayLikeObject(array)
+  // baseFlatten用于拍平数组
     ? baseDifference(array, baseFlatten(values, 1, isArrayLikeObject, true))
     : []
 }
@@ -93,7 +94,9 @@ function baseDifference(array, values, iteratee, comparator) {
     includes = arrayIncludesWith
     isCommon = false
   }
+  // lodash中该值定义为LARGE_ARRAY_SIZE = 200
   else if (values.length >= LARGE_ARRAY_SIZE) {
+    // cacheHas这个函数用于判断某个key是否在cache中
     includes = cacheHas
     isCommon = false
     values = new SetCache(values)
