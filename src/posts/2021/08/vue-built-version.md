@@ -63,7 +63,7 @@ vue构建的版本好多，可以从上图看到。从源码的构建上了解vu
 
 - **Runtime**: 用来创建 Vue 实例、渲染并处理虚拟 DOM 等的代码。基本上就是除去编译器的其它一切。
 
-- **[UMD](https://github.com/umdjs/umd)**: UMD 版本可以通过 <script> 标签直接用在浏览器中。
+- **[UMD](https://github.com/umdjs/umd)**: UMD 版本可以通过`script`标签直接用在浏览器中。
 
 - **[CommonJS](http://wiki.commonjs.org/wiki/Modules/1.1)**: CommonJS 版本用来配合老的打包工具比如 Browserify 或 webpack 1。这些打包工具的默认文件 (pkg.main) 是只包含运行时的 CommonJS 版本 (vue.runtime.common.js)。
 
