@@ -34,3 +34,18 @@ border-width: 10px 10px 10px 0;
 border-width: 10px;
 border-left: 0;
 ```
+
+### 合理的简写
+
+合理的简写可以防止未来会出现的风险。
+
+```css
+.bg-color {
+  background: red;
+
+  // better
+  background-color: red;
+}
+```
+
+意思是如果在另外的地方有对`.bg-color`声明了background-image，那bg-color这个元素就可能会被背景图片干扰，从而造成影响。
