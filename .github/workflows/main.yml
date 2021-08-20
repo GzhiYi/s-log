@@ -3,7 +3,7 @@ name: 博客部署
 on:
   push:
     branches:
-      - main
+      - blog
 
 # 任务
 jobs:
