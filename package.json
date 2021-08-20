@@ -9,7 +9,7 @@
     "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper",
     "render": "node ./src/posts/render.js",
-    "publish": "git add . && git commit -m 'updated blog.' && git push origin main"
+    "publish": "git add . && git commit -m 'updated blog.' && git push origin blog"
   },
   "dependencies": {
     "chokidar": "^3.4.0",
