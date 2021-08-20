@@ -127,3 +127,22 @@ function baseDifference(array, values, iteratee, comparator) {
   return result
 }
 ```
+
+### 扩展
+
+#### differenceBy(array, [values], [iteratee=_.identity])
+
+array和values都会经过iteratee这个迭代器执行后进行对比。
+
+#### differenceWith(array, [values], [comparator])
+
+comparator是比较器。
+
+```js
+var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+ 
+_.differenceWith(objects, [{ 'x': 1, 'y': 2 }], _.isEqual);
+// => [{ 'x': 2, 'y': 1 }]
+```
+
+需要注意，difference是找不同，所以是找出与`isEqual`比较器比较结果相反的数组项。
