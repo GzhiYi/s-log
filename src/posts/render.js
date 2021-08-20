@@ -127,7 +127,6 @@ date: ${dayjs(new Date()).format('YYYY-MM-DD HH:mm:ss')}
   }
 }
 const onGenerate = (event, path) => {
-  console.log('event path', event, path)
   if (/md|MD/g.test(path)) {
     generateInfo(event, path)
   }
