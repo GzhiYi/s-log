@@ -46,14 +46,63 @@ console.log(error) // ReferenceError: err not found
 例子：
 
 ```js
+// 1
 a = 2;
 var a;
 console.log(a) // 2
 
-// 另外
+// 2
 console.log(b)
 var b = 2
 // 你可能认为会输出2或者ReferenceError，实际上输出undefined
 ```
 
 **包括变量和函数在内的所有生命都会在任何代码被执行前被处理。**
+
+需要理解的是，`var b = 2`实际上是两个声明：
+
+```js
+var b;
+b = 2;
+```
+
+所以，上面的两个代码片段会有以下处理：
+
+```js
+// 1
+var a; // 声明
+a = 2; // 代码执行
+console.log(a) // 代码执行
+
+// 2
+var b; // 声明
+console.log(b) // 代码执行
+b = 2 // 代码执行
+```
+
+解释的前提是必须要知道，声明都是需要在代码被执行前先被处理，这个过程就是`变量提升`。
+
+每一个作用域都被进行提升操作。
+
+```js
+console.log(foo) // 报错误！！
+foo()
+var foo = function bar() {}
+```
+以上片段报错不是ReferenceError，而是TypeError：
+
+1. `Uncaught TypeError: foo is not a function`
+类型错误，执行了不属于该类型的操作。
+
+2. 如果log的是bar，则`Uncaught ReferenceError: bar is not defined`
+引用错误，在当前作用域中找不到该变量。
+
+相当于被处理为：
+
+```js
+var foo;
+foo()
+foo = funciton (){
+  var bar = **self**
+}
+```
