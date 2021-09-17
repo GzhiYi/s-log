@@ -1,5 +1,5 @@
 ---
-title: 观后笔记-你不知道的JavasSript-上-01
+title: 观后笔记-你不知道的JavaScript-上-01
 description: 你不知道的Javascri上册的一些内容记录，仅仅是记录自己所不是很明确但确实是有启发的内容点
 keywords: 你不知道的Javscript，you don't know javascript，笔记，记录，读书感
 labels: [前端]
